@@ -22,7 +22,7 @@ function Navbar() {
         <div>
             <div className='header flex'>
                 <div className='logoDiv'>
-                    <h3 className='logo'>Wonder</h3>
+                    <h3 className='logo'>Test</h3>
                 </div>
 
                 <div className={active}>
