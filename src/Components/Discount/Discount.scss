@@ -67,9 +67,10 @@
                     width: 95%;
                     color: #f7f7f7;
                     transition: .3s ease;
+                    margin-top: 1%;
 
                     &:hover {
-                        background: var(--primaryColor);
+                        background: var(--secHoverColor);
                     }
                 }
             }
@@ -93,8 +94,8 @@
                     padding: 0 3rem;
                 }
 
-                .input_btn{
-                    .btn{
+                .input_btn {
+                    .btn {
                         font-size: 16px;
                     }
                 }
@@ -103,15 +104,16 @@
     }
 }
 
-@media screen and (min-width:1024px){
-.discount{
-    .secContainer{
-        .textDiv{
-            gap: 2rem;
-            .title{
-                font-size: 30px;
+@media screen and (min-width:1024px) {
+    .discount {
+        .secContainer {
+            .textDiv {
+                gap: 2rem;
+
+                .title {
+                    font-size: 30px;
+                }
             }
         }
     }
-}
 }

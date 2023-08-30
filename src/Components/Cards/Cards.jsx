@@ -16,18 +16,18 @@ function Cards() {
 
   return (
     <div className='cards'>
-      <div data-aos='fade-up' data-aos-duration='2000' className="cardContainer container grid">
+      <div data-aos="fade-zoom-in" data-aos-offset="100" data-aos-duration='2000' className="cardContainer container grid">
         <div className="singleCard">
           <div className="imgDiv">
-            <img src={cardImage1} />
+            <img src={cardImage1} alt='forest'/>
           </div>
           <h4 className="textDiv">
-            Ballon Flight
+            Forest
           </h4>
         </div>
         <div className="singleCard">
           <div className="imgDiv">
-            <img src={cardImage2} />
+            <img src={cardImage2} alt='beach'/>
           </div>
           <h4 className="textDiv">
             Beach Travel
@@ -35,7 +35,7 @@ function Cards() {
         </div>
         <div className="singleCard">
           <div className="imgDiv">
-            <img src={cardImage3} />
+            <img src={cardImage3} alt='mountain'/>
           </div>
           <h4 className="textDiv">
             Mountain Tours

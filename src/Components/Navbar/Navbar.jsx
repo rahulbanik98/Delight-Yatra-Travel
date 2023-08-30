@@ -6,23 +6,28 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillYoutube } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { TbGridDots } from 'react-icons/tb';
-
+import { BrowserRouter, Link } from 'react-router-dom';
+// import delight from '../Assets/delight.png'
 
 function Navbar() {
     const [active, setActive] = useState('menuDiv')
 
     const showNavBar = () => {
-        setActive((current)=>(current='menuDiv activeNavbar'))
+        setActive((current) => (current = 'menuDiv activeNavbar'))
     }
 
     const removeNavBar = () => {
-        setActive((current)=>(current='menuDiv'))
+        setActive((current) => (current = 'menuDiv'))
     }
     return (
         <div>
             <div className='header flex'>
+                {/* <div style={{height: '1px'}}>
+                    <img src={delight} />
+                </div> */}
+
                 <div className='logoDiv'>
-                    <h3 className='logo'>Test</h3>
+                    <h3 className='logo'>Delight Yatra Travel</h3>
                 </div>
 
                 <div className={active}>
@@ -57,10 +62,17 @@ function Navbar() {
                 </div>
 
                 <div className="socialIcons flex">
-                    <BsFacebook className='icon' />
-                    <AiOutlineTwitter className='icon' />
-                    <AiFillYoutube className='icon' />
-                    <AiFillInstagram className='icon' />
+                    {/* <Link to='https://www.facebook.com/profile.php?id=61550502430785&mibextid=ZbWKwL'>Hello</Link> */}
+                    <BrowserRouter>
+                        <Link to='https://www.facebook.com/profile.php?id=61550502430785&mibextid=ZbWKwL' target='_blank'>
+                            <BsFacebook className='icon' />
+                        </Link>
+                        <AiOutlineTwitter className='icon' />
+                        <AiFillYoutube className='icon' />
+                        <Link to='https://www.instagram.com/delight_yatra_travel/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D' target='_blank'>
+                            <AiFillInstagram className='icon' />
+                        </Link>
+                    </BrowserRouter>
                 </div>
 
                 <div onClick={showNavBar} className="toggleNavbar">

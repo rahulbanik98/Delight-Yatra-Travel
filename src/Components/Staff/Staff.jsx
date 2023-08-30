@@ -20,7 +20,7 @@ function Staff() {
         <div className="staffContainer grid">
           <div data-aos='fade-up' data-aos-duration='2000' className="singleStaff">
             <div className="imgDiv">
-              <img src={user4} />
+              <img src={user4} alt='ceo'/>
             </div>
 
             <span className='name'>
@@ -38,7 +38,7 @@ function Staff() {
 
           <div data-aos='fade-up' data-aos-duration='2000' className="singleStaff">
             <div className="imgDiv">
-              <img src={user4} />
+              <img src={user4} alt='cto'/>
             </div>
 
             <span className='name'>
@@ -56,7 +56,7 @@ function Staff() {
 
           <div data-aos='fade-up' data-aos-duration='2000' className="singleStaff">
             <div className="imgDiv">
-              <img src={user4} />
+              <img src={user4} alt='ceo 2'/>
             </div>
 
             <span className='name'>
