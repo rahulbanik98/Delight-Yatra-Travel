@@ -13,6 +13,7 @@
   padding: 1rem 0;
   font-size: 25px;
   font-weight: 700;
+  margin-bottom: 2%;
 }
 .tours .secContainer .tourContainer {
   display: grid;

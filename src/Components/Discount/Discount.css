@@ -67,9 +67,10 @@
   width: 95%;
   color: #f7f7f7;
   transition: 0.3s ease;
+  margin-top: 1%;
 }
 .discount .secContainer .textDiv .input_btn .btn:hover {
-  background: var(--primaryColor);
+  background: var(--secHoverColor);
 }
 
 @media screen and (min-width: 520px) {
