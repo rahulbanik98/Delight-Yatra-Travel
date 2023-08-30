@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Review from './Components/Review/Review';
-import Staff from './Components/Staff/Staff';
+// import Staff from './Components/Staff/Staff';
 import Tours from './Components/Tours/Tours';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Tours />
       <Discount />
       <Review />
-      <Staff />
+      {/* <Staff /> */}
       <Footer/>
     </div>
   );
