@@ -22,39 +22,37 @@ function Navbar() {
     return (
         <div>
             <div className='header flex'>
-                {/* <div style={{height: '1px'}}>
-                    <img src={delight} />
-                </div> */}
 
                 <div className='logoDiv'>
                     <h3 className='logo'>Delight Yatra Travel</h3>
                 </div>
 
                 <div className={active}>
-                    <ul className='menuLists'>
-                        <li className='navItem'>
-                            <a href="#" onClick={removeNavBar} className='menuLink'>Home</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href="#" onClick={removeNavBar} className='menuLink'>About</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href="#" onClick={removeNavBar} className='menuLink'>Our Tours</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href="#" onClick={removeNavBar} className='menuLink'>Gallery</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href="#" onClick={removeNavBar} className='menuLink'>Blog</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href="#" onClick={removeNavBar} className='menuLink'>Contact Us</a>
-                        </li>
-                        <li className='navItem'>
-                            <a href="#" onClick={removeNavBar} className='menuLink'>Pages</a>
-                        </li>
-                    </ul>
-
+                    <BrowserRouter>
+                        <ul className='menuLists'>
+                            <li className='navItem'>
+                                <Link onClick={removeNavBar} className='menuLink'>Home</Link>
+                            </li>
+                            <li className='navItem'>
+                                <Link onClick={removeNavBar} className='menuLink'>About</Link>
+                            </li>
+                            <li className='navItem'>
+                                <Link onClick={removeNavBar} className='menuLink'>Our Tours</Link>
+                            </li>
+                            <li className='navItem'>
+                                <Link onClick={removeNavBar} className='menuLink'>Gallery</Link>
+                            </li>
+                            <li className='navItem'>
+                                <Link onClick={removeNavBar} className='menuLink'>Blog</Link>
+                            </li>
+                            <li className='navItem'>
+                                <Link onClick={removeNavBar} className='menuLink'>Contact Us</Link>
+                            </li>
+                            <li className='navItem'>
+                                <Link onClick={removeNavBar} className='menuLink'>Pages</Link>
+                            </li>
+                        </ul>
+                    </BrowserRouter>
                     <div onClick={removeNavBar} className='closeNavbar'>
                         <AiFillCloseCircle className='icon' />
                     </div>
