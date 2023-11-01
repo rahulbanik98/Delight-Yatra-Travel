@@ -104,7 +104,7 @@ function Footer() {
             </BrowserRouter>
           </div>
 
-          <p>Privacy Policy</p>
+          <p>Privacy Policy V.1.0.1</p>
         </div>
       </div>
     </div>
