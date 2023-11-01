@@ -7,7 +7,6 @@ import { AiFillYoutube } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { TbGridDots } from 'react-icons/tb';
 import { BrowserRouter, Link } from 'react-router-dom';
-// import delight from '../Assets/delight.png'
 
 function Navbar() {
     const [active, setActive] = useState('menuDiv')
@@ -22,7 +21,6 @@ function Navbar() {
     return (
         <div>
             <div className='header flex'>
-
                 <div className='logoDiv'>
                     <h3 className='logo'>Delight Yatra Travel</h3>
                 </div>
@@ -60,7 +58,6 @@ function Navbar() {
                 </div>
 
                 <div className="socialIcons flex">
-                    {/* <Link to='https://www.facebook.com/profile.php?id=61550502430785&mibextid=ZbWKwL'>Hello</Link> */}
                     <BrowserRouter>
                         <Link to='https://www.facebook.com/profile.php?id=61550502430785&mibextid=ZbWKwL' target='_blank'>
                             <BsFacebook className='icon' />
